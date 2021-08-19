@@ -1,9 +1,9 @@
---Creating and using our database
+-- Creating and using our database
 
 CREATE DATABASE pizzeria;
 USE pizzeria;
 
---We need to create our tables
+-- We need to create our tables
 
 CREATE TABLE pizzas(
 	pizza_id INT AUTO_INCREMENT,
