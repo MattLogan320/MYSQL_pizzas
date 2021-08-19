@@ -29,6 +29,6 @@ CREATE TABLE orders (
     fk_customer_id INT,
     date_booking DATETIME NOT NULL,
     PRIMARY KEY (order_id),
-    FOREIGN KEY (fk_pizza_id) REFERENCES pizzas(pizza_id)
+    FOREIGN KEY (fk_pizza_id) REFERENCES pizzas(pizza_id),
     FOREIGN KEY (fk_customer_id) REFERENCES customers(customer_id)
 );
