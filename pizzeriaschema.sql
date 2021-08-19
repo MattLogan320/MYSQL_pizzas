@@ -8,7 +8,7 @@ USE pizzeria;
 CREATE TABLE pizzas(
 	pizza_id INT AUTO_INCREMENT,
 	pizza_type VARCHAR(40) NOT NULL,
-    price DECIMAL NOT NULL,
+    price DECIMAL(10,2) NOT NULL,
     vegetarian BOOLEAN NOT NULL,
 	PRIMARY KEY (pizza_id)
 );

@@ -7,7 +7,7 @@ USE cinemas;
 CREATE TABLE movies(
 	movie_id INT AUTO_INCREMENT,
 	movie_name VARCHAR(100) NOT NULL,
-    price DECIMAL NOT NULL,
+    price DECIMAL(10,2) NOT NULL,
     age_restricted BOOLEAN NOT NULL,
     runtime TIME NOT NULL,
     screening_time DATETIME NOT NULL,
