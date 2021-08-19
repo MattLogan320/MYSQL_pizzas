@@ -1,3 +1,4 @@
+DROP DATABASE IF EXISTS cinemas;
 CREATE DATABASE cinemas;
 USE cinemas;
 
