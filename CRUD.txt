@@ -1,0 +1,39 @@
+Data Manipulation Language (DML) is a subset of SQL used to manipulate the contents of a database
+Data Definitin Language (DDL) is the subset used to gnereate and control our databases (schema)
+
+There are four main DML operators  (MYSQL KEYWORDS):
+
+Create      (INSERT INTO)
+Read        (SELECT)
+Update      (UPDATE)
+Delete      (DELETE)
+
+Create:
+
+INSERT INTO <table_name> (column_name1, column_name2,column_name3 etc.)
+VALUES (value1,value2,value3 etc.),
+(second_value1,second_value2,second_value3 etc.)
+;
+
+
+Read:
+
+SELECT * FROM <table_name> ---> will show all values in table 
+SELECT <all_desired_fields> FROM <table_name>
+SELECT <desired_columns> FROM <table_name> WHERE <constarint>=<value>
+
+
+Update:
+
+This finds an existing record and replaces one of the values of the record with new information (e.g. changing password)
+
+UPDATE <table_name>
+SET <column_name>='<value_in_field_to_change>
+WHERE <column_name>=<value_to_be_changed> ;
+
+
+Delete:
+
+DELETE FROM <table_name>; --> Deletes all entries from table
+DELETE FROM <table_name> WHERE <field> = <value> ;
+DELETE FROM <table_name> WHERE <field> operator(><= etc.) <value> ;
