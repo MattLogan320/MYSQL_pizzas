@@ -1,0 +1,37 @@
+Aggregate Queries
+
+A function  where multiple rows are grouped together to form one value, basically running multiple queries with one query.
+
+
+COUNT-
+
+Returns the amount of records that match the criteria
+
+SELECT COUNT(<column_name>) FROM <table_name> WHERE <condition>
+
+
+SUM- 
+
+Returns the  calculated total from a numerical field
+
+SELECT SUM(<column_to_sum>) FROM <table> WHERE <conditions>;
+
+
+
+MIN/MAX/AVG-
+
+SELECT MIN(<column_to_be_checked>) FROM <table> WHERE <conditions>;
+
+SELECT MAX(<column_to_be_checked>) FROM <table> WHERE <conditions>;
+
+SELECT AVG(<column_to_be_checked>) FROM <table> WHERE <conditions>;
+
+
+GROUP BY-
+
+Used in conjunction (primarily with the above Agg. Funcs.) to bring together sections of data
+
+SELECT <column_name>, MAX(<column_name_to_find_max_in) AS <max_column_name> FROM <table> GROUP BY <column_name>;
+
+
+

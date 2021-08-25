@@ -1,0 +1,12 @@
+Nested Queries
+
+Nested queries are used when you need to use a query as the value of another query
+
+SELECT       FROM        WHERE      =(
+        SELECT         FROM      WHERE    =(
+            SELECT     FROM    
+        )
+);
+
+
+The condition for one query is a query in of itself.
